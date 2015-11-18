@@ -6,23 +6,16 @@ public class UpdatePrimaryObjective : MonoBehaviour
 
 	public GameObject PrimaryObjective2;
 	public GameObject PrimaryObjective3;
-	public AudioSource audio_objective_complete;
 
 	// Use this for initialization
 	void Start () 
 	{
 
-
 	}
 
 	public void Awake()
 	{
-		audio_objective_complete = GetComponent<AudioSource> ();
-	}
 
-	public void OnTriggerEnter(Collider other)
-	{
-		audio_objective_complete.Play ();
 	}
 
 	void OnCollisionEnter(Collision col)
@@ -31,8 +24,6 @@ public class UpdatePrimaryObjective : MonoBehaviour
 		{
 			Destroy(col.gameObject);
 			PrimaryObjective2.SetActive (true);
-			audio_objective_complete.Play();
-
 		}
 
 		if (col.gameObject.name == "primary_objective_waypoint_02") 
