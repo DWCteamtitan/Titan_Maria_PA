@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Item>
-  <Name>Hello World</Name>
-  <Description>Bonjour, Salut, Hola, Бзиа збаша, Fâla,  ألسّلام عليك, Guten Tag, nuqneH!!!!</Description>
+  <Name>Primary Objective</Name>
+  <Description>Go to recon point 1</Description>
+  <SampleName>Liquid HydroCarbon</SampleName>
+  <Results>It is made up of liquid ethane, methane, and propane</Results>
 </Item>
