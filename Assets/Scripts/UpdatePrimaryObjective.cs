@@ -6,6 +6,7 @@ public class UpdatePrimaryObjective : MonoBehaviour
 
 	public GameObject PrimaryObjective2;
 	public GameObject PrimaryObjective3;
+	public GameObject PrimaryObjective4;
 	public GameObject text_recon_point_reached;
 
 	// Use this for initialization
@@ -21,7 +22,7 @@ public class UpdatePrimaryObjective : MonoBehaviour
 
 	void OnCollisionEnter(Collision col)
 	{
-		if (col.gameObject.name == "primary_objective_waypoint_01") 
+		if (col.gameObject.name == "primary_objective_waypoint_01") // GO TO THE FIRST RECON POINT
 		{
 			Destroy(col.gameObject);
 			PrimaryObjective2.SetActive (true);
@@ -33,6 +34,14 @@ public class UpdatePrimaryObjective : MonoBehaviour
 		{
 			Destroy(col.gameObject);
 			PrimaryObjective3.SetActive (true);
+			text_recon_point_reached.SetActive (true);
+			
+		}
+
+		if (col.gameObject.name == "primary_objective_waypoint_03") 
+		{
+			Destroy(col.gameObject);
+			PrimaryObjective4.SetActive (true);
 			text_recon_point_reached.SetActive (true);
 			
 		}
